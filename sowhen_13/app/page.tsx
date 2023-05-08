@@ -1,5 +1,5 @@
 'use client';
-import Button from '@/components/Button';
+import Button from '@/components/atoms/Button';
 import SoWhen from '@/components/SoWhen';
 // import { Button } from '@mui/material';
 import Image from 'next/image'

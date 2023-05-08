@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { ReactElement, useState, useEffect, useCallback, useRef } from "react";
 import SoWhen from "./SoWhen";
-import Button from "./Button";
+import Button from "./atoms/Button";
 
 const Header = (): ReactElement => {
 
