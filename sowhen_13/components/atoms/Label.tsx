@@ -12,7 +12,7 @@ const Label = ({ id, className = "", children }: PropsWithChildren<LabelProps>):
   return (
     <label
       htmlFor={id} 
-      className={classNames('block text-gray-700 text-base font-medium', className)}
+      className={classNames('block text-gray-300 text-base font-medium', className)}
     >
       { children }
     </label>

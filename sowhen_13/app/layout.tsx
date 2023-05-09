@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { RecoilRoot } from 'recoil'
 import ReactQueryProvider from './ReactQueryProvider';
 import Recoil from './Recoil';
+import Toast from './Toast';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
               <ReactQueryProvider>
                 { children }
               </ReactQueryProvider>
+              <Toast />
             </Recoil>
           </body>
         </html>

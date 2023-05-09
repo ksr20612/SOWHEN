@@ -1,4 +1,3 @@
-'use client';
 import Button from '@/components/atoms/Button';
 import SoWhen from '@/components/SoWhen';
 // import { Button } from '@mui/material';
@@ -13,7 +12,7 @@ export default function Home() {
         약속을 만들다. <br/>
         <SoWhen size="40px" />
       </h1>
-      <Button onClick={()=>{}}>
+      <Button>
         <Link href={'/schedule'}>10초만에 스케줄 만들기 📅</Link>
       </Button>
     </main>

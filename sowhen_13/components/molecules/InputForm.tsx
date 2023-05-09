@@ -9,17 +9,24 @@ interface InputFormProps {
     id: string;
     onChange: EventFunc<HTMLInputElement>;
     value: string;
+    placeholder?: string
 }
 
-const InputForm = ({ title, id, onChange, value }: InputFormProps): ReactElement => {
+const InputForm = ({ title, id, onChange, value, placeholder }: InputFormProps): ReactElement => {
 
   return (
     <>
-        <Label id={id}>{title}</Label>
+        <Label 
+          className="mb-5"
+          id={id}
+        >
+          {title}
+        </Label>
         <TextBox 
             id={id} 
             onChange={onChange}
             value={value}
+            placeholder={placeholder}
         />
     </>
   );
