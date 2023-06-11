@@ -4,10 +4,12 @@ import useCreate from '@/api/schedule/mutation/useCreate';
 import Button from '@/components/atoms/Button';
 import Header from '@/components/Header';
 import InputForm from '@/components/molecules/InputForm';
+import useNavigate from '@/hooks/useNavigate';
 import scheduleDescriptionState from '@/stores/scheduleDescription';
 import scheduleTitleState from '@/stores/scheduleTitle/atom';
 import { EventObject } from '@/types/Event';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { ReactElement, useCallback, useEffect, useState, useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import { getHashedText } from 'utilities/Encryptor';
@@ -27,10 +29,13 @@ const Schedule = (): ReactElement => {
         setDescription(e.currentTarget.value);
     }, []);
 
-    const handleClick = useCallback(()=>{
+    const { navigate } = useNavigate();
+    const handleClick = useCallback(async ()=>{
         const today = new Today();
-        const hashedText = getHashedText(title, description, today.toString).replaceAll('/', '');
-        alert(hashedText);
+        const calendarId = await getCalendarId(title, description, today.toString);
+        alert(calendarId);
+        // TODO: firebase 저장 필요
+        navigate(`/schedule/${calendarId}`);
         // saveCalendar({
         //     calendarId: hashedText,
         // })
@@ -73,6 +78,10 @@ const Schedule = (): ReactElement => {
             </main>
         </>
     )
+}
+
+const getCalendarId = async (...texts: string[]) => {
+    return getHashedText(...texts).replaceAll("/", "");
 }
 
 export default Schedule;

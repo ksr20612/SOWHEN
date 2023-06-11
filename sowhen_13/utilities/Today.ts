@@ -12,6 +12,9 @@ class Today {
         const milliseconds = this.today.getMilliseconds().toString();
         return month+day+hour+minute+seconds+milliseconds;
     }
+    get date() {
+        return this.today;
+    }
 }
 
 export default Today;
