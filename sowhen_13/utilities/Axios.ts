@@ -12,4 +12,4 @@ const API = (baseUrl?: string): AxiosInstance => axios.create({
 export default API;
 export const source = axios.CancelToken.source();
 
-const TIMEOUT_LIMIT = 5 * 1000;
+const TIMEOUT_LIMIT = 20 * 1000;

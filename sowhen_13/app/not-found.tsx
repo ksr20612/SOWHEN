@@ -13,12 +13,12 @@ const NotFound = (): ReactElement => {
     }, []);
     return (
         <div className="flex items-center justify-around w-screen h-screen">
-            <div className="absolute z-10 text-zinc-950 font-extrabold text-[60px] text-center">
+            <h1 className="absolute z-10 text-zinc-950 font-extrabold text-[60px] text-center">
                 404 - NOT FOUND <br/>
-                <Link href="/">Go back to Home</Link>
-            </div>
+                <Link href="../">Go back to Home</Link>
+            </h1>
             <Canvas dpr={[1, 2]} shadows 
-                camera={{ position: [-5, 5, 5], fov: 50, aspect: window.innerWidth / window.innerHeight }} 
+                camera={{ position: [-5, 5, 5], fov: 50, aspect: (typeof window !== 'undefined')? window.innerWidth / window.innerHeight : 1 }} 
                 className={'absolute w-full h-full'}
             >
                 <ambientLight />
