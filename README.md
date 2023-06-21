@@ -3,6 +3,7 @@ Tired of making an appointment? use sowhen!
 
 # 모두가 동의하는 약속을 만들다. SOWHEN
 
+please wait... something's gonna pop up soon...! 👇👇
 ![sowhen](https://github.com/ksr20612/SOWHEN/assets/48278678/2b0261c2-c72c-4974-b374-0bd83c675291)
 
 - 항상 여러 사람들이 약속을 잡을 때마다 카톡방에서 채팅으로 약속을 잡는 것이 불편했어요.
