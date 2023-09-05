@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SOWHEN
+Tired of making an appointment? use sowhen!
 
-## Getting Started
+# 모두가 동의하는 약속을 만들다. SOWHEN
 
-First, run the development server:
+please wait... something's gonna pop up soon...! 👇👇
+![sowhen](https://github.com/ksr20612/SOWHEN/assets/48278678/2b0261c2-c72c-4974-b374-0bd83c675291)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 항상 여러 사람들이 약속을 잡을 때마다 카톡방에서 채팅으로 약속을 잡는 것이 불편했어요.
+- 캘린더를 펼쳐놓고 각자가 가능한 날짜를 체크하거나, 실시간으로 함께 모여 약속을 잡고 싶었어요.
+- Next.js v13.4, Tailwind로 개발 방향을 잡았습니다.
+- webRTC를 활용하기로 결정, agora를 활용하여 쌍방향의 direct message를 송수신할 수 있도록 바닐라 JS로 webRTC 프로토타입을 완성하였습니다. 이제는 NEXT.JS에 이를 활용하고 적용해보려 합니다.
+  - 프로토타입은 현재 private repo에서 관리하고 있습니다. (agora관련 개인정보가 존재합니다)
+- Three.js를 활용한 페이지들도 추가하고 있습니다.
